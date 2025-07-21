@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -76,12 +77,12 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          
+
           className='mt-12 flex flex-col gap-8'
           action="https://formspree.io/f/mblkdlga" method="post"
 
         >
-          
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -123,6 +124,20 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <div className='mt-10 flex justify-center gap-5'>
+          <a href='https://github.com/Mohamed2007Sarhan' target='_blank' rel='noopener noreferrer' className='p-2 border border-white/50 rounded-lg text-white/80 hover:bg-white hover:text-black-100 transition-all'>
+            <FaGithub size={28} />
+          </a>
+          <a href='https://www.linkedin.com/in/mohamed-sarhan-b53a8b284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' rel='noopener noreferrer' className='p-2 border border-white/50 rounded-lg text-white/80 hover:bg-white hover:text-black-100 transition-all'>
+            <FaLinkedin size={28} />
+          </a>
+          <a href='https://x.com/MohamedSarhan09?t=bilUP0kb63lJJpO5uB3Row&s=09' target='_blank' rel='noopener noreferrer' className='p-2 border border-white/50 rounded-lg text-white/80 hover:bg-white hover:text-black-100 transition-all'>
+            <FaTwitter size={28} />
+          </a>
+          <a href='https://www.instagram.com/mohamed_sarhan6608?igsh=MThocTZoYTFxYjlwZw==' target='_blank' rel='noopener noreferrer' className='p-2 border border-white/50 rounded-lg text-white/80 hover:bg-white hover:text-black-100 transition-all'>
+            <FaInstagram size={28} />
+          </a>
+        </div>
       </motion.div>
 
       <motion.div
@@ -131,6 +146,8 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      
+
     </div>
   );
 };
