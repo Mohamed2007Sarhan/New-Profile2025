@@ -38,7 +38,9 @@ const ExperienceCard = ({ experience }) => {
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          <a href={experience.company_link} target="_blank" rel="noopener noreferrer">
+            {experience.company_name}
+          </a>
         </p>
       </div>
 

@@ -23,6 +23,7 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import Horus_University from "./company/Horus_University.png";
+import iBrand from "./company/ibrand.png";
 import ATHR from "./company/ATHR.png";
 import Microsoft from "./company/Microsoft.png";
 
@@ -56,6 +57,7 @@ export {
   Horus_University,
   ATHR,
   Microsoft,
+  iBrand,
   carrent,
   jobit,
   tripguide,
